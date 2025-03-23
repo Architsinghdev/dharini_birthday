@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dharini's Birthday</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Happy Birthday Dharini! 🎂</h1>
+        
+        <div class="button-container">
+            <button id="surpriseBtn" class="btn">Click for Surprise! 🎁</button>
+            <p id="message" class="hidden-message"></p>
+        </div>
+
+        <div class="photo-grid">
+            <img src="{{ url_for('static', filename='images/friend1.png') }}" class="photo">
+            <img src="{{ url_for('static', filename='images/friend2.png') }}" class="photo">
+            <img src="{{ url_for('static', filename='images/friend3.png') }}" class="photo">
+            <img src="{{ url_for('static', filename='images/friend4.png') }}" class="photo">
+            <img src="{{ url_for('static', filename='images/friend5.png') }}" class="photo">
+            <img src="{{ url_for('static', filename='images/friend6.png') }}" class="photo">
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
